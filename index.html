@@ -1,287 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RESUME</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
 
-    <script>
-      tailwind.config = {
-        theme: {
-          minHeight: {
-            "1/2": "50%",
-          },
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "regal-blue": "#243c5a",
-              primary: "#00082d",
-              secondary: "#00488a",
-              background: "#ffffff",
-              "text-color": "#ffffff",
-              "text-light-color": "#5d6472",
-            },
-          },
-          screens: {
-            sm: "640px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1280px",
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>GOKUL's CV</title>
+
+  <!-- Description -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+
+  <!-- Tailwind css CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        minHeight: {
+          "1/2": "50%",
+        },
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "regal-blue": "#243c5a",
+            primary: "#00082d",
+            secondary: "#00488a",
+            background: "#ffffff",
+            "text-color": "#ffffff",
+            "text-light-color": "#5d6472",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <div class="h-[100vh] bg-background p-6 lg:p-10">
-      <!-- Top Contact Session -->
-      <div class="w-full bg-gradient-to-r from-primary to-secondary rounded-lg">
-        <h3
-          class="flex justify-center text-white text-xl font-medium pt-4 text-text-color"
-        >
-          GOKUL B S
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <div class="h-[100vh] bg-background p-6 lg:p-10" id="container">
+
+    <!-- Start Header -->
+    <header class="w-full bg-gradient-to-r from-primary to-secondary rounded-lg" id="header">
+      <!-- Name -->
+      <h3 class="flex justify-center text-white text-xl font-medium pt-4 text-text-color">
+        GOKUL B S
+      </h3>
+
+      <!-- Role -->
+      <div class="text-center text-white text-sm font-normal pt-1 text-text-color">
+        <h3 class="text-white text-lg font-normal text-text-color">
+          Full Stack Developer <br class="lg:hidden"> ( <span class="text-text-color text-sm font-normal">Web And
+            Mobile App</span> )
         </h3>
-        <p
-          class="flex justify-center text-white text-sm font-normal px-8 pt-1 text-text-color"
-        >
-          <span class=""></span> 15/157-A, Sulochana Bhavan, Painkulam (PO),
-          Kanyakumari, Tamilnadu, India
-        </p>
-        <p
-          class="flex justify-center text-white text-sm font-normal pt-1 text-text-color"
-        >
-          +918870780689 | gokulsreejith22002@gmail.com
-        </p>
-        <a
-          class="flex justify-center text-white text-sm font-normal pt-1 text-text-color"
-        >
-          <span class=""></span> https://gokulsreejith.com</a
-        >
-        <a
-          class="flex justify-center text-white text-sm font-normal pt-1 text-text-color"
-          ><span class=""></span>
-          https://www.linkedin.com/in/gokul-b-s-b968191b5</a
-        >
-        <a
-          class="flex justify-center text-white text-sm font-normal pt-1 pb-6 text-text-color"
-          ><span class=""></sp an> https://github.com/GokulSreejith</a
-        >
       </div>
 
-      <!-- Middle Portion -->
-      <div class="sm:flex bg-background">
-        <!-- Left Side -->
-        <div
-          class="h-full w-full sm:w-1/2 lg:mx-3 my-6 px-2 lg:px-8"
-          id="left-side"
-        >
-          <!-- Objective -->
-          <div id="objection">
-            <div
-              class="h-12 mb-6 lg:h-14 mt-4 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl"
-            >
-              <h4 class="text-white text-xl font-medium text-text-color uppercase">
-                Objection
-              </h4>
-            </div>
-            <p class="text-text-light-color text-sm font-normal">
-              To secure a challenging position in a reputable organization to
-              expand my learnings, knowledge, and skills. Secure a responsible
-              career opportunity to fully utilize skills, while making a
-              significant contribution to the success of the company.
+
+      <!-- Address -->
+      <div class="text-center text-white text-sm font-normal pt-1 text-text-color">
+        <p class=""> 15/157-A, Sulochana Bhavan, Painkulam (PO), Kanyakumari, Tamilnadu, India </p>
+      </div>
+
+      <!-- Social Modia -->
+      <div class="flex justify-center py-2">
+        <p class="flex justify-center text-white text-sm font-normal px-2 lg:px-4 pt-1 text-text-color uppercase"
+          id="website">
+          <span class="w-7 h-7 pr-2 "><img src="images/website.png" alt="GokulSreejith" class="object-cover" /></span>
+          <a href="https://gokulsreejith.com">Website</a>
+        </p>
+        <p class="flex justify-center text-white text-sm font-normal px-2 lg:px-4 pt-1 text-text-color uppercase"
+          id="github">
+          <span class="w-7 h-7 pr-2 "><img src="images/github.png" alt="GokulSreejith" class="object-cover" /></span> <a
+            href="https://github.com/GokulSreejith">Github</a>
+        </p>
+        <p class="flex justify-center text-white text-sm font-normal px-2 lg:px-4 pt-1 text-text-color uppercase"
+          id="linkedin">
+          <span class="w-7 h-7 pr-2 "><img src="images/linkedin.png" alt="GokulSreejith" class="object-cover" /></span>
+          <a href="https://www.linkedin.com/in/gokul-b-s-b968191b5">Linkedin</a>
+        </p>
+      </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Middle Portion -->
+    <div class="sm:flex bg-background" id="middle">
+
+      <!-- Left Side -->
+      <div class="h-full w-full sm:w-1/2 lg:mx-3 my-6 px-2 lg:px-8" id="left-side">
+
+        <!-- Start Personal -->
+        <div id="presonal">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-4 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Personal Details
+            </h4>
+          </div>
+          <p class="text-primary text-lg font-medium pt-1">Date of Birth : <span
+              class="text-text-light-color text-sm font-normal">15/09/2002</span> </p>
+          <p class="text-primary text-lg font-medium pt-1">Gender : <span
+              class="text-text-light-color text-sm font-normal">MALE</span> </p>
+          <p class="text-primary text-lg font-medium pt-1">Place : <span
+              class="text-text-light-color text-sm font-normal"><a
+                href="https://maps.app.goo.gl/wrXGKCizEVfepeo1A">PAINKULAM</a></span></p>
+          <p class="text-primary text-lg font-medium pt-1">Phone : <span
+              class="text-text-light-color text-sm font-normal"><a href="tel:+918870780689">+918870780689</a></span></p>
+          <p class="text-primary text-lg font-medium pt-1">Gmail : <span
+              class="text-text-light-color text-sm font-normal"><a
+                href="mailto:gokulsreejith22002@gmail.com">gokulsreejith22002@gmail.com</a></span></p>
+          <!-- <p class="text-primary text-lg font-medium pt-1">Salary Claim : <span
+              class="text-text-light-color text-sm font-normal">₹65,000</span></p> -->
+        </div>
+        <!-- End Personal -->
+
+        <!-- Education -->
+        <div id="education">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Education
+            </h4>
+          </div>
+
+          <!-- Education 1 -->
+          <div>
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              BE COMPUTER SCIENCE AND ENGINEERING
+            </h3>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              2020 - Till Now
+            </p>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              Mar Ephraem College of Engineering and Technology under Anna
+              University Chennai
             </p>
           </div>
 
-          <!-- Education -->
-          <div id="education">
-            <div
-              class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl"
-            >
-              <h4 class="text-white text-xl font-medium text-text-color uppercase">
-                Education
-              </h4>
-            </div>
+          <!-- Education 2 -->
+          <div class="pt-2">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              HIGHER SECONDARY SCHOOL
+            </h3>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              2018 - 2020
+            </p>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              Government Higher Secondary School Munchairai
+            </p>
+          </div>
 
-            <!-- Education 1 -->
-            <div>
+          <!-- Education 3 -->
+          <div class="pt-2">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">SSLC</h3>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              2017 - 2018
+            </p>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              Government Higher Secondary School Munchairai
+            </p>
+          </div>
+
+        </div>
+        <!-- End Education -->
+
+        <!-- Start Experience -->
+        <div id="experience">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Experience
+            </h4>
+          </div>
+
+          <!-- Experience 1 -->
+          <div>
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              MERN Stack + Flutter developer
+            </h3>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              2020 - 2022
+            </p>
+            <h5 class="text-primary text-sm font-medium pt-1 uppercase">Satmaya Digital</h5>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              Software Development Company which develops
+              Hybrid mobile applications, websites and gives
+              support for the projects.
+            </p>
+
+            <div class="mt-1" id="responsibility">
               <h3 class="text-primary text-lg font-medium pt-1 uppercase">
-                BE COMPUTER SCIENCE AND ENGINEERING
+                RESPONSIBILITIES :
               </h3>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                2020 - Till Now
-              </p>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                Mar Ephraem College of Engineering and Technology under Anna
-                University Chennai
-              </p>
-            </div>
-
-            <!-- Education 2 -->
-            <div class="pt-2">
-              <h3 class="text-primary text-lg font-medium pt-1 uppercase">
-                HIGHER SECONDARY SCHOOL
-              </h3>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                2018 - 2020
-              </p>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                Government Higher Secondary School Munchairai
-              </p>
-            </div>
-
-            <!-- Education 3 -->
-            <div class="pt-2">
-              <h3 class="text-primary text-lg font-medium pt-1 uppercase">SSLC</h3>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                2017 - 2018
-              </p>
-              <p class="text-text-light-color text-sm font-normal pt-1">
-                Government Higher Secondary School Munchairai
-              </p>
+              <ul class="">
+                <li class="text-text-light-color text-sm font-normal pt-1">
+                  <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                  Development of web applications in nodejs
+                </li>
+                <li class="text-text-light-color text-sm font-normal pt-1">
+                  <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                  Development of admin panel in react
+                </li>
+                <li class="text-text-light-color text-sm font-normal pt-1">
+                  <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                  Managing the server (Hosting Raja)
+                </li>
+                <li class="text-text-light-color text-sm font-normal pt-1">
+                  <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                  Management of Database (Mongodb & MySQL)
+                </li>
+                <li class="text-text-light-color text-sm font-normal pt-1">
+                  <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                  Developed a food delivery application and it is now
+                  working live
+                </li>
+              </ul>
             </div>
           </div>
+
+          <!-- Experience 2 -->
+          <div class="mt-4 ">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              MERN Stack + Flutter developer
+            </h3>
+            <p class="text-text-light-color text-sm font-normal pt-1">
+              2021 - Till Now
+            </p>
+            <h5 class="text-primary text-sm font-medium pt-1 uppercase">Freelanse</h5>
+            <p class="text-text-light-color text-sm font-normal pt-1"></p>
+
+          </div>
+          <div class="mt-1" id="responsibility">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              RESPONSIBILITIES :
+            </h3>
+            <ul class="">
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Development of web applications in nodejs
+              </li>
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Development of admin panel in react
+              </li>
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Development of mobile applications in flutter
+              </li>
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Managing the server (Digital Ocean)
+              </li>
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Management of Database (Mongodb & MySQL)
+              </li>
+              <li class="text-text-light-color text-sm font-normal pt-1">
+                <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div>
+                Developed a Product Selling and Renting Services for a TRENTIT Private Limited Company in
+                Bangalore
+              </li>
+            </ul>
+          </div>
+
         </div>
+        <!-- End Experience -->
 
-        <!-- Right Side -->
-        <div
-          class="h-full w-full sm:w-1/2 lg:mx-3 my-6 px-2 lg:px-8"
-          id="right-side"
-        >
-          <!-- Skills -->
-          <div id="skills">
-            <div
-              class="h-12 mb-6 lg:h-14 mt-4 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl"
-            >
-              <h4 class="text-white text-xl font-medium text-text-color uppercase">
-                Skills
-              </h4>
-            </div>
+        <!-- Start Internship -->
+        <div id="internship">
+          <div
+            class="h-12 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Internship
+            </h4>
+          </div>
 
-            <div class="lg:mr-[60px] lg:ml-[10px]">
+          <!-- Internship 1 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              Python Internship ( <span class="text-text-light-color text-sm font-normal">SEVEN DAYS</span> )
+            </h3>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Rever Tech Student Learning
+              Community</h5>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="mt-2">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              MS Office Internship ( <span class="text-text-light-color text-sm font-normal">SEVEN DAYS</span> )
+            </h3>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Mar Ephraem College of
+              Engineering and Technology</h5>
+          </div>
+
+        </div>
+        <!-- End Internship -->
+
+        <!-- Start Language -->
+        <div id="languages">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Languages
+            </h4>
+          </div>
+          <ul class="">
+            <li>
+              <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div><span
+                class="text-text-light-color text-sm font-normal pt-1">English</span>
+            </li>
+            <li>
+              <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div><span
+                class="text-text-light-color text-sm font-normal pt-1">Malayalam</span>
+            </li>
+            <li>
+              <div class="w-[10px] h-[10px] mr-2 inline-block rounded-xl border-2 border-primary bg-white"></div><span
+                class="text-text-light-color text-sm font-normal pt-1">Tamil</span>
+            </li>
+          </ul>
+        </div>
+        <!-- End Language -->
+
+        <!-- Start Achievements -->
+        <div id="achievements">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Achievements
+            </h4>
+          </div>
+
+          <!-- Achievement 1 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              Bug Hunter ( <span class="text-text-light-color text-sm font-normal uppercase">First Price</span> )
+            </h3>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Mar Ephraem College of Engineering and Technology
+            </h5>
+          </div>
+
+        </div>
+        <!-- End Achievements -->
+
+      </div>
+      <!-- End Left Side -->
+
+      <!--Start Right Side -->
+      <div class="h-full w-full sm:w-1/2 lg:mx-3 my-6 px-2 lg:px-8" id="right-side">
+
+        <!-- Start Objective -->
+        <div id="objection">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-4 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Objection
+            </h4>
+          </div>
+          <p class="text-text-light-color text-sm font-normal">
+            To secure a challenging position in a reputable organization to
+            expand my learnings, knowledge, and skills. Secure a responsible
+            career opportunity to fully utilize skills, while making a
+            significant contribution to the success of the company.
+          </p>
+        </div>
+        <!-- End Objection -->
+
+        <!-- Start Skills -->
+        <div id="skills">
+
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Skills
+            </h4>
+          </div>
+
+          <div class="lg:mr-[60px] lg:ml-[10px]">
 
             <!-- Skill 1 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Nodejs (Express Framework)
               </p>
-              <div
-                class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   100%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 2 -->
+            <!-- Skill 2 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Database (MongoDB & MySQL)
               </p>
-              <div
-                class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   80%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 3 -->
+            <!-- Skill 3 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 React Framework (Redux State Management)
               </p>
-              <div
-                class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   80%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 4 -->
+            <!-- Skill 4 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Javascript & Typescript
               </p>
-              <div
-                class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   100%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 5 -->
+            <!-- Skill 5 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 HTML & CSS (Tailwind Framework)
               </p>
-              <div
-                class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   80%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 6 -->
+            <!-- Skill 6 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Python
               </p>
-              <div
-                class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[80%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   80%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 7 -->
+            <!-- Skill 7 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Flutter (Bloc State Management)
               </p>
-              <div
-                class="w-[60%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[60%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   60%
                 </p>
               </div>
             </div>
 
-               <!-- Skill 8 -->
+            <!-- Skill 8 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Java Spring Boot
               </p>
-              <div
-                class="w-[60%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[60%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   60%
                 </p>
               </div>
             </div>
-             
+
             <!-- Skill 9 -->
             <div class="mt-6">
               <p class="text-text-light-color text-sm font-normal pt-1">
                 Git & Linux Comments
               </p>
-              <div
-                class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl"
-              >
+              <div class="w-[100%] mt-2 px-2 h-5 bg-gradient-to-r from-primary to-secondary rounded-xl">
                 <p class="text-text-color text-sm font-normal text-right">
                   100%
                 </p>
@@ -289,8 +495,144 @@
             </div>
 
           </div>
+
         </div>
+        <!-- End Skills -->
+
+        <!-- Start Projects -->
+        <div id="projects">
+          <div
+            class="h-12 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Projects
+            </h4>
+          </div>
+
+          <!-- Projects 1 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              <a href="https://trentit.in">TRENTIT</a> ( <span class="text-text-light-color text-sm font-normal">THREE
+                MONTHS</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">Freelance
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Trentit is a web application where you can sell
+              and rent any type of your products even second hand products also accepted for sale but it will be
+              verified by the agent.</h5>
+          </div>
+
+          <!-- Projects 2 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              <a href="#">KWIKNKLEEN</a> ( <span class="text-text-light-color text-sm font-normal">SIX MONTHS</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">Freelance</p>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Kwiknkleen is an mobile application where you can
+              book your service and order products related to cleaning materials. It has lot of services like vehicle
+              washes like Car, Bike, Jeep and so..</h5>
+          </div>
+
+          <!-- Projects 3 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              <a href="#">EASYDEEL</a> ( <span class="text-text-light-color text-sm font-normal">SIX
+                MONTHS</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">Satmaya Digital</p>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">It's an application which has plenty of food
+              ordering app options it's main purpose is you can order food by this app</h5>
+          </div>
+
+          <!-- Projects 4 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              NETFLIX CLONE ( <span class="text-text-light-color text-sm font-normal">TWO MONTHS</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">Flutter Study Project</p>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">Netflix is a streaming service that offers a wide
+              variety
+              of award-winning TV shows, movies, anime,
+              documentaries, and more on thousands of internet-
+              connected devices.</h5>
+          </div>
+
+          <!-- Projects 5 -->
+          <!-- <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              <a href="https://chat.gokulsreejith.com">GS CHATS</a> ( <span
+                class="text-text-light-color text-sm font-normal">INCOMPLETE</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">MERN Study Project</p>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">GS Chats
+            </h5>
+          </div> -->
+
+          <!-- Projects 6 -->
+          <div class="mt-6">
+            <h3 class="text-primary text-lg font-medium pt-1 uppercase">
+              <a href="https://shop.gokulsreejith.com">GS SHOPPING</a> ( <span
+                class="text-text-light-color text-sm font-normal">THREE MONTHS</span> )
+            </h3>
+            <p class="text-primary text-sm font-medium pt-1">Nodejs Study Project</p>
+            <h5 class="text-text-light-color text-sm font-medium pt-1">GS Shopping is a form of electronic commerce
+              which
+              allows consumers to directly buy goods or services from a seller over the Internet using a web browser
+            </h5>
+          </div>
+
+        </div>
+        <!-- End Projects -->
+
+        <!-- Start Interests -->
+        <div id="interests">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Interests
+            </h4>
+          </div>
+          <ul>
+            <li class="mt-1 flex">
+              <div class="w-7 h-7 pr-2"><img src="images/coding.png" class="object-cover" /></div>
+              <span class="text-text-light-color text-sm font-normal">Web and Mobile Application
+                Developement</span>
+            </li>
+            <li class="mt-1 flex">
+              <div class="w-7 h-7 pr-2"><img src="images/hacker.png" class="object-cover" /></div>
+              <span class="text-text-light-color text-sm font-normal">Ethical
+                Hacking
+                Developement</span>
+            </li>
+          </ul>
+        </div>
+        <!-- End Interests -->
+
+        <!-- Start Declaration -->
+        <div id="declaration">
+          <div
+            class="h-12 mb-6 lg:h-14 mt-10 mx-6 lg:mx-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary filter drop-shadow-xl">
+            <h4 class="text-white text-xl font-medium text-text-color uppercase">
+              Declaration
+            </h4>
+          </div>
+          <p class="text-text-light-color text-sm font-normal">
+            I hereby declare that the facts given above are genuine
+            to the best of my knowledge and belief
+          </p>
+        </div>
+        <!-- End Declaration -->
+
       </div>
+      <!-- End Right Side -->
     </div>
-  </body>
+    <!-- End Middle Portion -->
+
+    <!-- Start Footer -->
+    <footer class="mb-10" id="footer">
+
+    </footer>
+    <!-- End Footer -->
+
+  </div>
+</body>
+
 </html>
