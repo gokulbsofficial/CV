@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOKUL B S - Certified Penetration Tester</title>
+    <title>GOKUL B S - Backend Developer</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -13,6 +13,10 @@
         a {
             text-decoration: none;
             color: #000;
+        }
+
+        ul {
+            margin: 0;
         }
 
         body {
@@ -32,6 +36,13 @@
 
         h1 {
             text-align: center;
+            margin: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 10px;
         }
 
         .section {
@@ -63,7 +74,6 @@
 
         .date {
             float: right;
-            /* font-weight: bold; */
             text-align: end;
         }
 
@@ -92,7 +102,6 @@
         }
 
 
-        /* Floating Buttons */
         .floating-buttons {
             position: fixed;
             bottom: 20px;
@@ -125,7 +134,6 @@
             background-color: #ddd;
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -141,12 +149,56 @@
         .modal-content {
             background-color: #fefefe;
             margin: 15% auto;
-            height: 15% auto;
             padding: 20px;
             border: 1px solid #888;
+            border-radius: 8px;
             width: 80%;
             max-width: 500px;
             text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #share-url {
+            width: 100%;
+            padding: 10px;
+            padding-right: 120px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #copy-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 6px 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #copy-button:hover {
+            background-color: #0056b3;
+        }
+
+        #copy-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
         }
 
         .close {
@@ -162,6 +214,7 @@
             text-decoration: none;
             cursor: pointer;
         }
+
 
 
         @media screen and (max-width: 600px) {
@@ -185,7 +238,7 @@
             }
 
             h1 {
-                margin: 10px 0;
+                margin: 8px 0;
                 font-size: 24px;
             }
 
@@ -193,6 +246,30 @@
             .int-list {
                 column-gap: 30px;
                 row-gap: 15px;
+            }
+
+            .modal-content {
+                margin: 30% auto;
+                width: 90%;
+                padding: 15px;
+                max-width: 300px;
+            }
+
+            .close {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            #share-url {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
             }
         }
     </style>
@@ -202,6 +279,7 @@
     <div class="container">
         <header>
             <h1>GOKUL B S</h1>
+            <h4>Backend Developer</h4>
             <ul class="profile-links">
                 <li>
                     <a href="tel:+918870780689">
@@ -238,48 +316,187 @@
         </header>
         <section class="summary section">
             <h2>SUMMARY</h2>
-            <p style="text-align: justify;">As an experienced freelance backend developer with a foundation in Computer
-                Science Engineering, I bring
-                a unique blend of technical skills and a solid understanding of cyber security fundamentals. Proficient
-                in coding languages and network security principles, I am passionate about diving deeper into cyber
-                security techniques and protocols. Eager to leverage my experience and enthusiasm to contribute to
-                safeguarding digital systems and data.
+            <p style="text-align: justify;">As an experienced backend developer with a background in computer science
+                engineering, I possess a robust skill set in designing and maintaining efficient server-side
+                applications and databases. My expertise includes a strong foundation in various programming languages,
+                frameworks, and database technologies. I am driven by a passion for creating scalable and reliable
+                backend systems, and I am eager to leverage my skills to build high-performance solutions that meet
+                complex business requirements.
             </p>
         </section>
         <section class="technical-skills section">
             <h2>TECHNICAL SKILLS</h2>
             <ul class="list">
                 <li>
-                    <strong>Networking Fundamentals</strong>: OSI MODEL, TCP/IP, DNS, DHCP , HTTP/HTTPS, SSL/TLS.
+                    <strong>Programming</strong>: JavaScript, Typescript, Python, Java, C, Bash.
                 </li>
                 <li>
-                    <strong>Operating System</strong>: Parrot Security, Kali Linux, Trace Labs, TailsOS, Ubuntu Server,
-                    Windows, Windows Server.
+                    <strong>Libraries & Frameworks</strong>: React.js, Next.js, Express.js, Nest.js, Flask, Django,
+                    Mongoose, Prisma, Tailwind CSS.
                 </li>
                 <li>
-                    <strong>Programming</strong>: Javascript (React, Next, Node), Typescript, Python (Django), Java,
-                    SQL.
+                    <strong>Tools</strong>: Git Version Control, Docker, VS Code, Figma, Postman, Microsoft Excel,
+                    Microsoft Word.
                 </li>
                 <li>
-                    <strong>Tools</strong>: Burpsuite, Nmap, Metasploit, Wireshark, Bettercap, Nessus, OWASP Zap,
-                    Maltego, Hydra, Aircrack-ng, John The Ripper, Nmap, Nikto, Snort, ApkTools, Dex Tools, Git Version
-                    Control, Docker, VS Code, Microsoft Excel.
+                    <strong>Database</strong>: MySQL, MongoDB, Redis, Firebase Firestore.
                 </li>
                 <li>
-                    <strong>Database</strong>: Firebase Firestore, MySQL, MongoDB, Redis.
+                    <strong>Operating System</strong>: Linux (Ubuntu, Parrot Security, Kali Linux), Windows, Windows
+                    Server.
                 </li>
                 <li>
-                    <strong>Cloud Computing Platforms</strong>: AWS, GCP, Digital Ocean, Hostinger, Azure, Hostingraja.
-                </li>
-                <li>
-                    <strong>Practical Labs</strong>: EC-Council Cyberq Lab, Portswigger, Vulnhub, Pentest Garage, Hack
-                    The Box, Tryhackme.
-                </li>
-                <li>
-                    <strong>Soft Skills</strong>: Problem Solving, Fast Learning, Adaptability, Friendly.
+                    <strong>Cloud Computing Platforms</strong>: AWS, GCP, Digital Ocean, Plesk, Hostinger, Azure,
+                    Hostingraja.
                 </li>
             </ul>
         </section>
+
+
+        <section class="experience section">
+            <h2>EXPERIENCE</h2>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Freelance), VectorCrop</strong>
+                </span>
+                <span class="date">
+                    Sep 2022 - Present
+                </span>
+            </p>
+            <ul>
+                <li>Contributed to various client projects as part of a development team, focusing on delivering
+                    high-quality software solutions.</li>
+                <li><strong>Roles & Responsibilities:</strong> Handled backend development, including database design,
+                    hosting, deployment, and security</li>
+                <li><strong>Technologies Used:</strong> Employed Node.js with Express framework, MongoDB and MySQL for
+                    databases, and utilized hosting
+                    services such as DigitalOcean and Hostinger.</li>
+            </ul>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Part-Time), Ortmor Agency, Kochi, Kerala</strong>
+                </span>
+                <span class="date">
+                    Mar 2023 - Feb 2024
+                </span>
+            </p>
+            <ul>
+                <li>A complete marketing and technology agency specializing in digital and experiential marketing to
+                    grow brands and businesses.</li>
+                <li><strong>Roles & Responsibilities:</strong> Handled backend development, database management with
+                    SQL and NoSQL, email integration, and managed Cloudways hosting operations across different staging
+                    environments.</li>
+                <li><strong>Technologies Used:</strong> Utilized Node.js, MongoDB, MariaDB, Prisma for database
+                    management, and integrated email services with Nodemailer and SendGrid.</li>
+            </ul>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Part-Time), TrentIt India Private Limited, Bangalore, Karnataka</strong>
+                </span>
+                <span class="date">
+                    Sep 2022 - Mar 2023
+                </span>
+            </p>
+            <ul>
+                <li>Developed and maintained a platform for buying and selling second-hand products, focusing on
+                    creating a seamless user experience for transactions.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development, including database design,
+                    hosting, and application management.</li>
+                <li><strong>Technologies Used:</strong></li> Technologies Used: Utilized Node.js with Express framework,
+                managed databases with MongoDB, and employed hosting services like DigitalOcean and AWS S3.
+            </ul>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Part-Time), Satmaya Digital, Haripad, Kerala</strong>
+                </span>
+                <span class="date">
+                    Sep 2021 - Sep 2022
+                </span>
+            </p>
+            <ul>
+                <li>A software development company specializing in various software solutions and services.</li>
+                <li><strong>Roles & Responsibilities:</strong> Fixed bugs in the backend, added additional features,
+                    and managed hosting raja server operations.</li>
+                <li><strong>Technologies Used:</strong> Utilized Node.js and Express for backend development, Twilio for
+                    communication features, MongoDB and Firebase for database and push notifications.</li>
+            </ul>
+
+        </section>
+
+        <!-- <section class="internship section">
+            <h2>INTERNSHIP EXPERIENCE</h2>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Academor
+                </span>
+                <span class="date">
+                    Bangalore, Karnataka
+                    <br>
+                    (Sep 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Nikist
+                </span>
+                <span class="date">
+                    Noida, Uttar Pradesh
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Techno Hacks
+                </span>
+                <span class="date">
+                    Nashik, Maharashtra
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Web Developer Intern (Remote) </strong>
+                    <br>
+                    Techno Hacks
+                </span>
+                <span class="date">
+                    Nashik, Maharashtra
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Web Developer Intern (Remote) </strong>
+                    <br>
+                    Zetpeak
+                </span>
+                <span class="date">
+                    Banglore, Karnataka
+                    <br>
+                    (Jun 2023 - Sep 2023)
+                </span>
+            </p>
+
+        </section> -->
+
         <section class="education section">
             <h2>EDUCATION</h2>
 
@@ -291,11 +508,11 @@
                 </span>
                 <span class="date">
                     <br>
-                    (Aug 2020 - Jun 2024)
+                    (Aug 2020 - Jul 2024)
                 </span>
             </p>
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>Higher Secondary School</strong>
                     <br>
@@ -305,13 +522,14 @@
                     <br>
                     (May 2018 - May 2020)
                 </span>
-            </p>
+            </p> -->
 
         </section>
-        <section class="certificates section">
-            <h2>PROFESSIONAL CERTIFICATES</h2>
 
-            <!-- <p>
+        <!-- <section class="certificates section">
+            <h2>PROFESSIONAL CERTIFICATES</h2> -->
+
+        <!-- <p>
                 <span>
                     <strong>CEH v12 Master</strong>
                     <br>
@@ -323,7 +541,7 @@
                 </span>
             </p> -->
 
-            <!-- <p>
+        <!-- <p>
                 <span>
                     <strong>CEH v12 (Practical)</strong>
                     <br>
@@ -335,7 +553,7 @@
                 </span>
             </p> -->
 
-            <!-- <p>
+        <!-- <p>
                 <span>
                     <strong>CEH v12 (Theory)</strong>
                     <br>
@@ -347,7 +565,7 @@
                 </span>
             </p> -->
 
-            <!-- <p>
+        <!-- <p>
                 <span>
                     <strong>CompTIA Security+</strong>
                     <br>
@@ -359,7 +577,7 @@
                 </span>
             </p> -->
 
-            <p>
+        <!-- <p>
                 <span>
                     <strong>Certified Penetration Tester</strong>
                     <br>
@@ -369,9 +587,9 @@
                     Trivandam
                     <br>
                     (March 2023)</span>
-            </p>
+            </p> -->
 
-        </section>
+        <!-- </section> -->
 
         <section class="courses section">
             <h2>COURSES</h2>
@@ -480,7 +698,7 @@
                 </span>
             </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="" target="_blank">
@@ -495,9 +713,9 @@
                     <br>
                     (June 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/684f6083-d9d1-43f5-918f-ab8c1d3a9c39"
@@ -513,9 +731,9 @@
                     <br>
                     (June 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/ce4b01a8-59dd-49f3-90a2-ae2f280b2e79"
@@ -531,9 +749,9 @@
                     <br>
                     (June 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/971ffc6a-c459-414e-a4a4-1e0144408696"
@@ -549,9 +767,9 @@
                     <br>
                     (June 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/0d9663d1-8c8e-4721-98d3-1e9f86bc33d3"
@@ -567,9 +785,9 @@
                     <br>
                     (May 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/20b9e947-ac28-4d0c-b4e0-5d323f13945e"
@@ -585,9 +803,9 @@
                     <br>
                     (May 2014)
                 </span>
-            </p>
+            </p> -->
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>
                         <a href="https://codered.eccouncil.org/certificate/ab3e8ced-3bc1-4b1e-b54d-8e49ff24c20e"
@@ -603,35 +821,43 @@
                     <br>
                     May 2024
                 </span>
-            </p>
+            </p> -->
 
             <p>
                 <span>
-                    <strong>Docker</strong>
-                    <br>
-                    Software Development
+                    <strong>Docker, Guvi</strong>
                 </span>
                 <span class="date">
-                    Guvi
-                    <br>
-                    (October 2023)
+                    October 2023
                 </span>
             </p>
+            <ul>
+                <li>Covered the fundamentals of Docker, focusing on containerization, image creation, and deployment
+                    techniques.</li>
+                <li>Learned to work with Docker objects including images, containers, registries, volumes, Docker Swarm,
+                    and Docker Compose.</li>
+                <li>Developed a website, hosted an image file on Docker Hub, and utilized Dockerfile and Docker Compose
+                    for DevOps processes.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong>Full Stack</strong>
-                    <br>
-                    Software Development
+                    <strong>Full Stack, Infosys Spring Board</strong>
                 </span>
                 <span class="date">
-                    Infosys Spring Board
-                    <br>
-                    (March 2023)
+                    March 2023
                 </span>
             </p>
+            <ul>
+                <li>Focused on the MEAN stack (MongoDB, Express, Angular, Node.js) for full-stack development, covering
+                    both frontend and backend technologies.</li>
+                <li>Gained proficiency in Angular for frontend development, MongoDB for database management, Bootstrap
+                    for styling, and Node.js.</li>
+                <li>Developed a Book Store Application that supports selling and purchasing books through the platform.
+                </li>
+            </ul>
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong>Python</strong>
                     <br>
@@ -642,140 +868,14 @@
                     <br>
                     (August 2022)
                 </span>
-            </p>
+            </p> -->
 
         </section>
 
-        <section class="experience section">
-            <h2>FREELANCE EXPERIENCE</h2>
-
-            <p>
-                <span>
-                    <strong>Backend Developer (Remote)</strong>
-                    <br>
-                    VectorCrop
-                </span>
-                <span class="date">
-                    Virtual
-                    <br>
-                    (Sep 2022 - Present)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong>Backend Developer (Hybrid)</strong>
-                    <br>
-                    Ortmor Agency
-                </span>
-                <span class="date">
-                    Kochi, Kerala
-                    <br>
-                    (Mar 2023 - Mar 2024)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong>Backend Developer (Remote)</strong>
-                    <br>
-                    TrentIt India Private Limited
-                </span>
-                <span class="date">
-                    Bangalore, Karnataka
-                    <br>
-                    (Sep 2022 - Mar 2023)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong>Backend Developer (Remote)</strong>
-                    <br>
-                    Satmaya Digital
-                </span>
-                <span class="date">
-                    Haripad, Kerala
-                    <br>
-                    (Sep 2021 - Sep 2022)
-                </span>
-            </p>
-
-        </section>
-
-        <section class="internship section">
-            <h2>INTERNSHIP EXPERIENCE</h2>
-
-            <p>
-                <span>
-                    <strong> Cyber Security Intern (Remote) </strong>
-                    <br>
-                    Academor
-                </span>
-                <span class="date">
-                    Bangalore, Karnataka
-                    <br>
-                    (Sep 2023 - Oct 2023)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong> Cyber Security Intern (Remote) </strong>
-                    <br>
-                    Nikist
-                </span>
-                <span class="date">
-                    Noida, Uttar Pradesh
-                    <br>
-                    (Jul 2023 - Oct 2023)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong> Cyber Security Intern (Remote) </strong>
-                    <br>
-                    Techno Hacks
-                </span>
-                <span class="date">
-                    Nashik, Maharashtra
-                    <br>
-                    (Jul 2023 - Oct 2023)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong> Web Developer Intern (Remote) </strong>
-                    <br>
-                    Techno Hacks
-                </span>
-                <span class="date">
-                    Nashik, Maharashtra
-                    <br>
-                    (Jul 2023 - Oct 2023)
-                </span>
-            </p>
-
-            <p>
-                <span>
-                    <strong> Web Developer Intern (Remote) </strong>
-                    <br>
-                    Zetpeak
-                </span>
-                <span class="date">
-                    Banglore, Karnataka
-                    <br>
-                    (Jun 2023 - Sep 2023)
-                </span>
-            </p>
-
-        </section>
         <section class="projects section">
             <h2>PROJECTS</h2>
 
-            <p>
+            <!-- <p>
                 <span>
                     <strong> Web Application PT Report </strong>
                     <br>
@@ -786,163 +886,225 @@
                     <br>
                     (March 2023)
                 </span>
-            </p>
+            </p> -->
 
             <p>
                 <span>
-                    <strong> Farmsense (BE Final Year Project) </strong>
-                    <br>
-                    Mar Ephraem College
+                    <strong> Infinity Saudhi & Qatar, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Jan 2023 - Mar 2023)
+                    May 2024 - Jul 2024
                 </span>
             </p>
+            <ul>
+                <li>An e-commerce platform enabling retailers to inquire about bulk quantities of products across
+                    various categories for their sales needs.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development using MongoDB for efficient
+                    data handling and system operations.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> CommentJet </strong>
-                    <br>
-                    VectorCrop
+                    <strong> Farmsense (BE Final Year Project), Mar Ephraem College </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (July 2023 - Present)
+                    Jan 2024 - Mar 2024
                 </span>
             </p>
+            <ul>
+                <li>FarmSense is an AI and IoT-based agricultural management platform. It includes AI modules for soil
+                    type classification, crop disease detection, and crop and fertilizer recommendations. An IoT system
+                    captures soil data for cloud analysis, and a Flutter app provides real-time insights to farmers.
+                </li>
+                <li><strong>Roles & Responsibilities:</strong> Developed the frontend mobile application using Flutter,
+                    implementing GetX for state management and integrating REST APIs.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Royal Technology Solution (rts.ae) </strong>
-                    <br>
-                    Ortmor Agency
+                    <strong> CommentJet, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Aug 2023 - Mar 2024)
+                    Jan 2024 - April 2024
                 </span>
             </p>
+            <ul>
+                <li>CommentJet is a versatile platform that empowers designers to seamlessly share design files,
+                    collaborate, and provide valuable feedback. Streamline your design workflow with effortless file
+                    sharing, interactive commenting, and real-time collaboration.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development including MongoDB NoSQL
+                    design, Docker
+                    containerization, AWS S3 integration, and ensured secure and efficient hosting.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Red Head Xportors </strong>
-                    <br>
-                    VectorCrop
+                    <strong> Royal Technology Solution (rts.ae), Ortmor Agency </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Jun 2023 - Aug 2024)
+                    Aug 2023 - Feb 2024
                 </span>
             </p>
+            <ul>
+                <li>Royal Technology Solutions offers comprehensive technology solutions to businesses globally,
+                    focusing on delivering innovative and reliable services across various sectors.</li>
+                <li><strong>Roles and Responsibilities:</strong> Developed an admin and backend CMS for the company’s
+                    portfolio using
+                    MariaDB and Prisma. Managed the hosting of the website on Cloudways, ensuring proper configuration
+                    for different environments.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Secure Cred </strong>
-                    <br>
-                    VectorCrop
+                    <strong> Red Head Xportors, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Jun 2023 - July 2023)
+                    Jun 2023 - Aug 2024
                 </span>
             </p>
+            <ul>
+                <li>Red Head Xportors is an e-commerce platform designed to facilitate the sale of custom-made products.
+                    The platform provides a seamless online shopping experience, including product listings, shopping
+                    cart functionality, and secure checkout processes.</li>
+                <li><strong>Roles & Responsibilities:</strong> As the backend developer, designed and implemented the
+                    system using
+                    MongoDB for data management and handled deployment and hosting on Hostinger to ensure reliable
+                    service and performance.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Abudhabi Malayalee </strong>
-                    <br>
-                    VectorCrop
+                    <strong> Secure Cred, VectorCrop Community </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (May 2023 - Jun 2023)
+                    Jun 2023 - July 2023
                 </span>
             </p>
+            <ul>
+                <li>SecureCrud is a password manager tool designed to store passwords securely both locally and on a
+                    server through a mobile app.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed the entire project within the community and
+                    served as a backend developer for secure server-side storage.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> BMW M FESTIVAL JEDDAH 2023 </strong>
-                    <br>
-                    Ortmor Agency
+                    <strong> Abudhabi Malayalee, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Apr 2023 - May 2023)
+                    May 2023 - Jun 2023
                 </span>
             </p>
+            <ul>
+                <li>Abudhabi Malayalees is a platform designed to connect the Malayalee community in Abu Dhabi. It
+                    offers features including job opportunities, business profile management, and event organization,
+                    aimed at fostering community engagement and providing valuable resources.</li>
+                <li><strong>Roles & Responsibilities:</strong> Developed and maintained the backend system, focusing on
+                    database management and server-side
+                    functionalities. Managed features related to job opportunities, business profile management, and
+                    community events, ensuring a seamless user experience.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Deonex </strong>
-                    <br>
-                    VectorCrop
+                    <strong> BMW M FESTIVAL JEDDAH 2023, Ortmor Agency </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Feb 2023 - Apr 2023)
+                    Apr 2023 - May 2023
                 </span>
             </p>
+            <ul>
+                <li>A portal for event registration, allowing attendees to register for events in Dubai. The system
+                    generates invitation QR codes for general attendees and VIP QR codes for VIP contacts. It supports
+                    attendance tracking during the event and generates pre- and post-event reports.</li>
+                <li><strong>Roles & Responsibilities:</strong> Developed and managed the backend for the event
+                    management portal, including implementing QR code
+                    generation, managing VIP and general attendee data, and ensuring accurate attendance tracking and
+                    reporting.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Cattle Abnormality Detection using Semi-Supervised Learning </strong>
-                    <br>
-                    Mar Ephraem College
+                    <strong> Deonex, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Nov 2022 - Dec 2022)
+                    Feb 2023 - Apr 2023
                 </span>
             </p>
+            <ul>
+                <li>An e-commerce mobile application enabling users to purchase electronic products using Deonex
+                    cryptocurrency.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development, integrated Deonex
+                    cryptocurrency payments, and ensured secure and
+                    efficient transactions.</li>
+            </ul>
+
+            <!-- <p>
+                <span>
+                    <strong> Cattle Abnormality Detection using Semi-Supervised Learning, Mar Ephraem College </strong>
+                </span>
+                <span class="date">
+                    Nov 2022 - Dec 2022
+                </span>
+            </p> -->
 
             <p>
                 <span>
-                    <strong> TrentIt Reselling Marketplace and E-Commerce Platform </strong>
-                    <br>
-                    TrentIt India Private Limited
+                    <strong> TrentIt Reselling Marketplace and E-Commerce Platform, TrentIt India Private Limited
+                    </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Sep 2022 - Jan 2023)
+                    Sep 2022 - Jan 2023
                 </span>
             </p>
+            <ul>
+                <li>An online marketplace for reselling used goods, featuring a platform where users can list and
+                    purchase products with transparency regarding the product's condition.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development, including database design
+                    with MongoDB, and handled application hosting
+                    and maintenance.</li>
+            </ul>
 
             <p>
                 <span>
-                    <strong> Forskor </strong>
-                    <br>
-                    VectorCrop
+                    <strong> Forskor, VectorCrop </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Jul 2022 - Aug 2023)
+                    Jul 2022 - Aug 2023
                 </span>
             </p>
+            <ul>
+                <li>The Forskor web application for ordering food online from Forskor Restaurant in Bellandur,
+                    Bangalore, with menu browsing and home delivery options.</li>
+                <li><strong>Roles & Responsibilities:</strong> Managed backend development, including order processing,
+                    cooking status updates, and delivery
+                    management features.</li>
+            </ul>
+
+            <!-- <p>
+                <span>
+                    <strong> Kwiknkleen, Satmaya Digital </strong>
+                </span>
+                <span class="date">
+                    Sep 2021 - Feb 2022
+                </span>
+            </p> -->
 
             <p>
                 <span>
-                    <strong> Easydeel Food Delivery Application </strong>
-                    <br>
-                    Satmaya Digital
+                    <strong> Easydeel Food Delivery Application, Satmaya Digital </strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (Sep 2021 - Feb 2023)
+                    Sep 2021 - Feb 2022
                 </span>
             </p>
+            <ul>
+                <li>Easydeel is a food delivery application that facilitates users in ordering food from various
+                    restaurants and tracks the cooking and delivery process.</li>
+                <li><strong>Roles & Responsibilities:</strong> Handled backend development to resolve issues and
+                    implement new features, ensuring improved
+                    application performance and user satisfaction.</li>
+            </ul>
 
         </section>
 
@@ -951,35 +1113,36 @@
 
             <p>
                 <span>
-                    <strong>NASA Bug Report Acknowledgement </strong>
-                    <br>
-                    BugCroud
+                    <strong>NASA Bug Report Acknowledgement, BugCroud </strong>
                 </span>
                 <span class="date">
-                    Cybersecurity
-                    <br>
-                    (March 2023)
+                    March 2023
                 </span>
+            <ul>
+                <li>Identified and reported a critical bug to NASA, earning official acknowledgment.</li>
+                <li>Submitted the report through Bugcrowd, a leading platform for crowdsourced cybersecurity.</li>
+            </ul>
             </p>
 
             <p>
                 <span>
-                    <strong>Code Bug Hunter (Python) </strong>
-                    <br>
-                    Mar Ephraem College
+                    <strong>Code Bug Hunter (Python), Mar Ephraem College</strong>
                 </span>
                 <span class="date">
-                    Development
-                    <br>
-                    (May 2022)
+                    May 2022
                 </span>
+            <ul>
+                <li>Participated in a symposium program focused on identifying and fixing bugs in Python code.</li>
+                <li>Awarded 1st prize for exceptional bug detection and resolution skills.</li>
+            </ul>
             </p>
 
         </section>
 
         <section class="languages section">
             <h2>LANGUAGE SKILLS</h2>
-            <ul class="lan-list">
+            <ul class="lan-list"
+                style="margin-left: 8px; display: flex; justify-content: space-between; align-items: center;">
                 <li>
                     English (Professional)
                 </li>
@@ -997,7 +1160,9 @@
 
         <section class="interests section">
             <h2>INTERESTS</h2>
-            <ul class="int-list">
+            <ul class="int-list"
+                style="margin-left: 8px; display: flex; justify-content: space-between; align-items: center;">
+
                 <li>
                     Learning new technologies
                 </li>
@@ -1012,7 +1177,7 @@
 
 
         <div class="floating-buttons">
-            <a href="/assets/GOKUBS_RESUME.pdf" download class="floating-button" id="download-button">
+            <a href="/assets/GOKULBS_RESUME.pdf" download class="floating-button" id="download-button">
                 <i class="fa fa-download"></i>
             </a>
             <button class="floating-button" id="share-button">
@@ -1024,9 +1189,12 @@
         <div id="share-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Share this resume:</p>
-                <input type="text" id="share-url" value="https://cv.gokulbs.com" readonly>
-                <button id="copy-button">Copy Link</button>
+                <p>Share this resume</p>
+                <div class="input-container">
+                    <input type="text" id="share-url" value="https://cv.gokulbs.com" readonly>
+                    <button id="copy-button">Copy Link</button>
+                </div>
+                <br><br>
             </div>
         </div>
 

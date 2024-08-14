@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOKUL B S - Certified Penetration Tester</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto';
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            color: #000;
+            font-size: 20px;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list li {
+            margin-bottom: 5px;
+        }
+
+        .date {
+            float: right;
+            /* font-weight: bold; */
+            text-align: end;
+        }
+
+        .profile-links {
+            padding: 0;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .profile-links a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .lan-list,
+        .int-list {
+            display: flex;
+            gap: 30px;
+            padding-left: 10px;
+            flex-wrap: wrap;
+
+        }
+
+
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-button {
+            width: 50px;
+            height: 50px;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .floating-button img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .floating-button:hover {
+            background-color: #ddd;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            height: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .profile-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .section p,
+            li,
+            a {
+                font-size: 13px;
+            }
+
+            .section h2 {
+                font-size: 16px;
+            }
+
+            h1 {
+                margin: 10px 0;
+                font-size: 24px;
+            }
+
+            .lan-list,
+            .int-list {
+                column-gap: 30px;
+                row-gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GOKUL B S</h1>
+            <ul class="profile-links">
+                <li>
+                    <a href="tel:+918870780689">
+                        <i class="fa fa-phone"></i>
+                        +91 8870780689
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:official@gokulbs.com">
+                        <i class="fa fa-envelope"></i>
+                        official@gokulbs.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gokulbs.com">
+                        <i class="fa fa-globe"></i>
+                        gokulbs.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/gokulbsofficial">
+                        <i class="fa fa-linkedin-square"></i>
+                        gokulbsofficial
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/gokulbsofficial">
+                        <i class="fa fa-github"></i>
+                        gokulbsofficial
+                    </a>
+                </li>
+
+            </ul>
+        </header>
+        <section class="summary section">
+            <h2>SUMMARY</h2>
+            <p style="text-align: justify;">As an experienced freelance backend developer with a foundation in Computer
+                Science Engineering, I bring
+                a unique blend of technical skills and a solid understanding of cyber security fundamentals. Proficient
+                in coding languages and network security principles, I am passionate about diving deeper into cyber
+                security techniques and protocols. Eager to leverage my experience and enthusiasm to contribute to
+                safeguarding digital systems and data.
+            </p>
+        </section>
+        <section class="technical-skills section">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul class="list">
+                <li>
+                    <strong>Networking Fundamentals</strong>: OSI MODEL, TCP/IP, DNS, DHCP , HTTP/HTTPS, SSL/TLS.
+                </li>
+                <li>
+                    <strong>Operating System</strong>: Parrot Security, Kali Linux, Trace Labs, TailsOS, Ubuntu Server,
+                    Windows, Windows Server.
+                </li>
+                <li>
+                    <strong>Programming</strong>: Javascript (React, Next, Node), Typescript, Python (Django), Java,
+                    SQL.
+                </li>
+                <li>
+                    <strong>Tools</strong>: Burpsuite, Nmap, Metasploit, Wireshark, Bettercap, Nessus, OWASP Zap,
+                    Maltego, Hydra, Aircrack-ng, John The Ripper, Nmap, Nikto, Snort, ApkTools, Dex Tools, Git Version
+                    Control, Docker, VS Code, Microsoft Excel.
+                </li>
+                <li>
+                    <strong>Database</strong>: Firebase Firestore, MySQL, MongoDB, Redis.
+                </li>
+                <li>
+                    <strong>Cloud Computing Platforms</strong>: AWS, GCP, Digital Ocean, Hostinger, Azure, Hostingraja.
+                </li>
+                <li>
+                    <strong>Practical Labs</strong>: EC-Council Cyberq Lab, Portswigger, Vulnhub, Pentest Garage, Hack
+                    The Box, Tryhackme.
+                </li>
+                <li>
+                    <strong>Soft Skills</strong>: Problem Solving, Fast Learning, Adaptability, Friendly.
+                </li>
+            </ul>
+        </section>
+        <section class="education section">
+            <h2>EDUCATION</h2>
+
+            <p>
+                <span>
+                    <strong>B.E Computer Science and Engineering</strong>
+                    <br>
+                    Anna University, Tamilnadu, India
+                </span>
+                <span class="date">
+                    <br>
+                    (Aug 2020 - Jun 2024)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Higher Secondary School</strong>
+                    <br>
+                    GHSS, Munchirai, Tamilnadu, India
+                </span>
+                <span class="date">
+                    <br>
+                    (May 2018 - May 2020)
+                </span>
+            </p>
+
+        </section>
+        <section class="certificates section">
+            <h2>PROFESSIONAL CERTIFICATES</h2>
+
+            <!-- <p>
+                <span>
+                    <strong>CEH v12 Master</strong>
+                    <br>
+                    EC-Council
+                </span>
+                <span class="date">
+                    <br>
+                    Ongoing
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>CEH v12 (Practical)</strong>
+                    <br>
+                    EC-Council
+                </span>
+                <span class="date">
+                    <br>
+                    Ongoing
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>CEH v12 (Theory)</strong>
+                    <br>
+                    EC-Council
+                </span>
+                <span class="date">
+                    <br>
+                    Ongoing
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>CompTIA Security+</strong>
+                    <br>
+                    CompTIA
+                </span>
+                <span class="date">
+                    <br>
+                    Ongoing
+                </span>
+            </p> -->
+
+            <p>
+                <span>
+                    <strong>Certified Penetration Tester</strong>
+                    <br>
+                    Red Team Hacker Academy
+                </span>
+                <span class="date">
+                    Trivandam
+                    <br>
+                    (March 2023)</span>
+            </p>
+
+        </section>
+
+        <section class="courses section">
+            <h2>COURSES</h2>
+
+            <!-- <p>
+                <span>
+                    <strong>DevSecOps: Implementing Security in DevOps Processes</strong>
+                    <br>
+                    DevSecOps
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>OWASP Top 10 for Docker Containers and Kubernetes Security</strong>
+                    <br>
+                    Software Development
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Master Wi-Fi Ethical Hacking - Evil Twin Attacks Complete</strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Cisco LABS Crash Course</strong>
+                    <br>
+                    Security Architecture and Operations
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Applied Secure Smart City</strong>
+                    <br>
+                    Industrial Security Controls
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Open Source Intelligence</strong>
+                    <br>
+                    Cybersecurity
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Wireshark for Ethical Hackers</strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <!-- <p>
+                <span>
+                    <strong>Ethical Hacking with Nmap</strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (Ongoing)
+                </span>
+            </p> -->
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="" target="_blank">
+                            Power of Next Generation Firewalls
+                        </a>
+                    </strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (June 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/684f6083-d9d1-43f5-918f-ab8c1d3a9c39"
+                            target="_blank">
+                            Session Hijacking and Prevention Techniques
+                        </a>
+                    </strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (June 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/ce4b01a8-59dd-49f3-90a2-ae2f280b2e79"
+                            target="_blank">
+                            Windows Penetration Testing Essentials
+                        </a>
+                    </strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (June 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/971ffc6a-c459-414e-a4a4-1e0144408696"
+                            target="_blank">
+                            Deep Dive into Network Assessments
+                        </a>
+                    </strong>
+                    <br>
+                    Cybersecurity
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (June 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/0d9663d1-8c8e-4721-98d3-1e9f86bc33d3"
+                            target="_blank">
+                            Burpsuite: Web Application Penetration Testing
+                        </a>
+                    </strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (May 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/20b9e947-ac28-4d0c-b4e0-5d323f13945e"
+                            target="_blank">
+                            OWASP Top 10 Security Fundamentals
+                        </a>
+                    </strong>
+                    <br>
+                    Vulnerability Assessment and Pentesting
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    (May 2014)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>
+                        <a href="https://codered.eccouncil.org/certificate/ab3e8ced-3bc1-4b1e-b54d-8e49ff24c20e"
+                            target="_blank">
+                            Deep Web and Cybersecurity
+                        </a>
+                    </strong>
+                    <br>
+                    Cybersecurity
+                </span>
+                <span class="date">
+                    EC-Council | Learning
+                    <br>
+                    May 2024
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Docker</strong>
+                    <br>
+                    Software Development
+                </span>
+                <span class="date">
+                    Guvi
+                    <br>
+                    (October 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Full Stack</strong>
+                    <br>
+                    Software Development
+                </span>
+                <span class="date">
+                    Infosys Spring Board
+                    <br>
+                    (March 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Python</strong>
+                    <br>
+                    Software Development
+                </span>
+                <span class="date">
+                    Revertech IT Solutions PVT LTD
+                    <br>
+                    (August 2022)
+                </span>
+            </p>
+
+        </section>
+
+        <section class="experience section">
+            <h2>FREELANCE EXPERIENCE</h2>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Remote)</strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Virtual
+                    <br>
+                    (Sep 2022 - Present)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Hybrid)</strong>
+                    <br>
+                    Ortmor Agency
+                </span>
+                <span class="date">
+                    Kochi, Kerala
+                    <br>
+                    (Mar 2023 - Mar 2024)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Remote)</strong>
+                    <br>
+                    TrentIt India Private Limited
+                </span>
+                <span class="date">
+                    Bangalore, Karnataka
+                    <br>
+                    (Sep 2022 - Mar 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Backend Developer (Remote)</strong>
+                    <br>
+                    Satmaya Digital
+                </span>
+                <span class="date">
+                    Haripad, Kerala
+                    <br>
+                    (Sep 2021 - Sep 2022)
+                </span>
+            </p>
+
+        </section>
+
+        <section class="internship section">
+            <h2>INTERNSHIP EXPERIENCE</h2>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Academor
+                </span>
+                <span class="date">
+                    Bangalore, Karnataka
+                    <br>
+                    (Sep 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Nikist
+                </span>
+                <span class="date">
+                    Noida, Uttar Pradesh
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Cyber Security Intern (Remote) </strong>
+                    <br>
+                    Techno Hacks
+                </span>
+                <span class="date">
+                    Nashik, Maharashtra
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Web Developer Intern (Remote) </strong>
+                    <br>
+                    Techno Hacks
+                </span>
+                <span class="date">
+                    Nashik, Maharashtra
+                    <br>
+                    (Jul 2023 - Oct 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Web Developer Intern (Remote) </strong>
+                    <br>
+                    Zetpeak
+                </span>
+                <span class="date">
+                    Banglore, Karnataka
+                    <br>
+                    (Jun 2023 - Sep 2023)
+                </span>
+            </p>
+
+        </section>
+        <section class="projects section">
+            <h2>PROJECTS</h2>
+
+            <p>
+                <span>
+                    <strong> Web Application PT Report </strong>
+                    <br>
+                    Red Team Hacker Academy
+                </span>
+                <span class="date">
+                    Cyber Security
+                    <br>
+                    (March 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Farmsense (BE Final Year Project) </strong>
+                    <br>
+                    Mar Ephraem College
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Jan 2023 - Mar 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> CommentJet </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (July 2023 - Present)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Royal Technology Solution (rts.ae) </strong>
+                    <br>
+                    Ortmor Agency
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Aug 2023 - Mar 2024)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Red Head Xportors </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Jun 2023 - Aug 2024)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Secure Cred </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Jun 2023 - July 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Abudhabi Malayalee </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (May 2023 - Jun 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> BMW M FESTIVAL JEDDAH 2023 </strong>
+                    <br>
+                    Ortmor Agency
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Apr 2023 - May 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Deonex </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Feb 2023 - Apr 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Cattle Abnormality Detection using Semi-Supervised Learning </strong>
+                    <br>
+                    Mar Ephraem College
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Nov 2022 - Dec 2022)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> TrentIt Reselling Marketplace and E-Commerce Platform </strong>
+                    <br>
+                    TrentIt India Private Limited
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Sep 2022 - Jan 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Forskor </strong>
+                    <br>
+                    VectorCrop
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Jul 2022 - Aug 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong> Easydeel Food Delivery Application </strong>
+                    <br>
+                    Satmaya Digital
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (Sep 2021 - Feb 2023)
+                </span>
+            </p>
+
+        </section>
+
+        <section class="achievements section">
+            <h2>ACHIEVEMENTS</h2>
+
+            <p>
+                <span>
+                    <strong>NASA Bug Report Acknowledgement </strong>
+                    <br>
+                    BugCroud
+                </span>
+                <span class="date">
+                    Cybersecurity
+                    <br>
+                    (March 2023)
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <strong>Code Bug Hunter (Python) </strong>
+                    <br>
+                    Mar Ephraem College
+                </span>
+                <span class="date">
+                    Development
+                    <br>
+                    (May 2022)
+                </span>
+            </p>
+
+        </section>
+
+        <section class="languages section">
+            <h2>LANGUAGE SKILLS</h2>
+            <ul class="lan-list">
+                <li>
+                    English (Professional)
+                </li>
+                <li>
+                    Malayalam (Native)
+                </li>
+                <li>
+                    Tamil (Intermediate)
+                </li>
+                <!-- <li>
+                    Hindi (Intermediate)
+                </li> -->
+            </ul>
+        </section>
+
+        <section class="interests section">
+            <h2>INTERESTS</h2>
+            <ul class="int-list">
+                <li>
+                    Learning new technologies
+                </li>
+                <li>
+                    Traveling to new places
+                </li>
+                <li>
+                    Watching movies
+                </li>
+            </ul>
+        </section>
+
+
+        <div class="floating-buttons">
+            <a href="/assets/GOKUBS_RESUME.pdf" download class="floating-button" id="download-button">
+                <i class="fa fa-download"></i>
+            </a>
+            <button class="floating-button" id="share-button">
+                <i class="fa fa-share-alt"></i>
+            </button>
+        </div>
+
+        <!-- Share Modal -->
+        <div id="share-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Share this resume:</p>
+                <input type="text" id="share-url" value="https://cv.gokulbs.com" readonly>
+                <button id="copy-button">Copy Link</button>
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+
+    <script>
+        // Get modal elements
+        var modal = document.getElementById("share-modal");
+        var btn = document.getElementById("share-button");
+        var span = document.getElementsByClassName("close")[0];
+        var copyButton = document.getElementById("copy-button");
+        var shareUrl = document.getElementById("share-url");
+
+        // Open the modal when the share button is clicked
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // Close the modal when the user clicks on <span> (x)
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when the user clicks anywhere outside of the modal
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Copy the share URL to the clipboard
+        copyButton.onclick = function () {
+            shareUrl.select();
+            shareUrl.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            alert("Link copied to clipboard: " + shareUrl.value);
+        }
+
+    </script>
+</body>
+
+</html>
